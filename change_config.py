@@ -52,7 +52,7 @@ def main(args):
                     f"./{user}_{model} is an old version of the model's repo."
                 )
 
-        os.system(f"git clone https://huggingface.co/{user}/{model} {user}_{model}")
+        os.system(f"GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/{user}/{model} {user}_{model}")
 
         with open(f"./{user}_{model}/config.json") as f:
             config_json = json.load(f)
