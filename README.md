@@ -20,12 +20,12 @@ model repos.
 ./change_config.py --search_key patrickvonplaten/t5-tiny-ra --key max_length --value 10 --rf --upload
 ```
 
-## upload_a_rew_repo.py
+## upload_a_new_repo.py
 
 This script can be used to create a new repo.
 PS. That's my real password.
 
 ```bash
-./upload_a_rew_repo.py --user patrickvonplaten --pw 12345678 --org google --model mt5-small
+./upload_a_new_repo.py --user patrickvonplaten --pw 12345678 --org google --model mt5-small
 ```
 
